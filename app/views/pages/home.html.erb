@@ -7,7 +7,7 @@
     You have succesfully authenticated with your Devise account. You are now ready to interact with this application.
   </p>
 
-
+  <%= link_to "New Turma", new_turma_path	 %>
   <br></br>
   <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo: false } %>
 
