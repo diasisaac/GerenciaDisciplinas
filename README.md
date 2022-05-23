@@ -10,7 +10,7 @@
 [Rails](https://rubyonrails.org)
 *   7.0.3
 
-[Heroku](https://fast-tor-84042.herokuapp.com/)
+[Heroku](https://young-escarpment-40079.herokuapp.com/)
 
 ## ![Github](https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png) Status do Projeto
 
