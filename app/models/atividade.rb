@@ -7,5 +7,5 @@ class Atividade < ApplicationRecord
   validates :data, presence: true
 
   has_one :aluno
-
+  has_one :avaliacao
 end

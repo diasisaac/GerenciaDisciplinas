@@ -21,15 +21,17 @@
     <%= form.text_field :observacoes %>
   </div>
 
-  <div>
-    <%= form.label :aluno_id, style: "display: block" %>
-    <%= form.text_field :aluno_id %>
+  <div class="field">
+    <%= form.label :aluno_id %>
+    <%= form.collection_select(:aluno_id, Aluno.all, :id, :nome,{:selected => @avaliacao.aluno_id})%>
+  </div>
+>
+
+  <div class="field">
+    <%= form.label :atividade_id %>
+    <%= form.collection_select(:atividade_id, Atividade.all, :id, :titulo,{:selected => @avaliacao.atividade_id})%>
   </div>
 
-  <div>
-    <%= form.label :atividade_id, style: "display: block" %>
-    <%= form.text_field :atividade_id %>
-  </div>
 
   <div>
     <%= form.submit %>
