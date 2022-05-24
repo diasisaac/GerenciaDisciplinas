@@ -26,7 +26,6 @@ When('Eu preencho pontos com {string}, observacoes com {string}, seleciono aluno
   fill_in 'avaliacao[observacoes]', :with => string2
   select string3, :from => 'Aluno'
   select string4, :from => 'Atividade'
-
 end
 
 When('Eu clico em criar avaliacao') do
