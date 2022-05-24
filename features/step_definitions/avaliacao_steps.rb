@@ -35,3 +35,13 @@ end
 Then('Eu vejo que a avaliacao foi criada com sucesso') do
   expect(page).to have_content('Avaliacao was successfully created')
 end
+
+
+Then('Eu vejo a mensagem de observacao invalida') do
+  expect(page).to have_content("Observacoes can't be blank")
+end
+
+Then('Eu vejo a mensagem de erro de pontuação invalida') do
+  expect(page).to have_content('Pontos must be in 0..10')
+end
+
