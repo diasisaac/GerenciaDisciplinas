@@ -42,7 +42,7 @@ class AvaliacaoTest < ActiveSupport::TestCase
                          turma_id:turma.id
         aluno.save
 
-        
+
         atividade = Atividade.new titulo:"Verbos",
                                   descricao:"Vai ser dificil",
                                   bimestre:"1",
