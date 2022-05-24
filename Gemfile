@@ -77,6 +77,8 @@ group :test do
   gem "webdrivers"
   gem "ffi"
   gem 'rspec-expectations'
+  gem 'cucumber-rails', require:false
+  gem 'database_cleaner'
 end
 
 
