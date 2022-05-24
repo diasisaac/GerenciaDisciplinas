@@ -15,7 +15,3 @@
 ## ![Github](https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png) Status do Projeto
 
 Em andamento
-
-## ![Github](https://github.githubassets.com/images/icons/emoji/unicode/2328.png) 
-
-Você pode acessar o sistema através do Login: X e senha: X  
