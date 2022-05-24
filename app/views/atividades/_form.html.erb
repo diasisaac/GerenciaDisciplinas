@@ -31,9 +31,9 @@
     <%= form.date_field :data %>
   </div>
 
-  <div>
-    <%= form.label :disciplina_id, style: "display: block" %>
-    <%= form.text_field :disciplina_id %>
+  <div class="field">
+    <%= form.label :disciplina_id %>
+    <%= form.collection_select(:disciplina_id, Disciplina.all, :id, :nome,{:selected => @atividade.disciplina_id})%>
   </div>
 
   <div>
