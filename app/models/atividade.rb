@@ -6,4 +6,6 @@ class Atividade < ApplicationRecord
   validates :bimestre, presence: true, numericality: true
   validates :data, presence: true
 
+  has_one :aluno
+
 end
