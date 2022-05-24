@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :disciplinas
   resources :alunos
   resources :turmas
   root 'pages#home'

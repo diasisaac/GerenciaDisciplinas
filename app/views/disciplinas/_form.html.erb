@@ -1,0 +1,33 @@
+<%= form_with(model: disciplina) do |form| %>
+  <% if disciplina.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(disciplina.errors.count, "error") %> prohibited this disciplina from being saved:</h2>
+
+      <ul>
+        <% disciplina.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :ano_letivo, style: "display: block" %>
+    <%= form.number_field :ano_letivo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :turma_id %>
+    <%= form.collection_select(:turma_id, Turma.all, :id, :nome,{:selected => @disciplina.turma_id})%>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

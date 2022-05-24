@@ -4,4 +4,5 @@ class Turma < ApplicationRecord
   validates :ano_letivo, presence: true , uniqueness: true
 
   has_many :alunos
+  has_many :disciplinas
 end

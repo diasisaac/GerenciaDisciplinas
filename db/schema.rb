@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_23_235903) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_24_015409) do
   create_table "alunos", force: :cascade do |t|
     t.string "nome"
     t.integer "turma_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["turma_id"], name: "index_alunos_on_turma_id"
+  end
+
+  create_table "disciplinas", force: :cascade do |t|
+    t.string "nome"
+    t.integer "ano_letivo"
+    t.integer "turma_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["turma_id"], name: "index_disciplinas_on_turma_id"
   end
 
   create_table "turmas", force: :cascade do |t|
@@ -40,4 +49,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_23_235903) do
   end
 
   add_foreign_key "alunos", "turmas"
+  add_foreign_key "disciplinas", "turmas"
 end
