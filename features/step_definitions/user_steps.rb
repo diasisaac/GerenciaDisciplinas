@@ -47,3 +47,7 @@ end
 Then('Eu vejo que o login do usuario de email {string} foi efetuado') do |email|
   expect(page).to have_content(email)
 end
+
+Then('Eu vejo a mensagem de erro {string}') do |email_erro|
+  expect(page).to have_content(email_erro)
+end
