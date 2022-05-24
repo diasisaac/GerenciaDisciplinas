@@ -12,7 +12,7 @@ Feature: User
 
   Scenario: logar no sistema
     Given O usuario de login "dimas@gmail.com" e senha "123456" existe
-    Given Eu estou na pagina de login
+    And Eu estou na pagina de login
     And Eu preencho o campo de login com o email "dimas@gmail.com" e o campo senha com "123456"
     When Eu clico em logar
     Then Eu vejo que o login do usuario de email "dimas@gmail.com" foi efetuado
